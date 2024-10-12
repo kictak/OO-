@@ -11,7 +11,7 @@ namespace ООП
         public Persone persone;
         public string title;
         public double rating;
-
+        
         public Article(Persone p, string t, double r)
         {
             persone = p;
@@ -21,13 +21,15 @@ namespace ООП
 
         public Article()
         {
+            persone = new Persone();
             title = "Time";
             rating = 9.4;
         }
 
-        public string Article.ToFullString()
+        public string ToFullString()
         {
-
+            //return $"статья такая то... рейтинг такой. автор: тут поля из персона";
+            return persone.ToFullString() + "  " + title + " " + rating;
         }
     }
 }

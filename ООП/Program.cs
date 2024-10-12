@@ -10,10 +10,14 @@ namespace ООП
     {
         static void Main(string[] args)
         {
-            Persone persone1 = new Persone();
-            Console.WriteLine(persone1.GetName());
-            Console.WriteLine(persone1.GetSurname());
-            Console.WriteLine(persone1.Getdate_of_birth());
+
+            Article a = new Article();
+            Console.WriteLine(a.ToFullString());
+
+            //Persone persone1 = new Persone();
+            //Console.WriteLine(persone1.GetName());
+            //Console.WriteLine(persone1.GetSurname());
+            //Console.WriteLine(persone1.Getdate_of_birth());
         }
     }
 }

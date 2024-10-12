@@ -39,6 +39,11 @@ namespace ООП
         {
             return date_of_birth;
         }
+
+        public string ToFullString()
+        {
+            return GetName() + "  " + GetSurname() + "  " + Getdate_of_birth();
+        }
   
         
        

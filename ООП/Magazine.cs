@@ -8,8 +8,10 @@ namespace ООП
 {
     class Magazine
     {
-        private string Name_jurnal;
-        //private Frequncy;
-        //private DateTime;
-    }
+        private string Name;
+        private Frequncy frequncy;
+        private DateTime date;
+        private int circulation;
+        private Article[]
+    } 
 }
