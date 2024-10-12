@@ -13,5 +13,13 @@ namespace ООП
         private DateTime date;
         private int circulation;
         private Article[]
+
+        publci Magazine(string n, Frequncy f, DateTime d, int c)
+        {
+            Name = n;
+            frequncy = f;
+            date = d;
+            circulation = c;
+        }
     } 
 }
