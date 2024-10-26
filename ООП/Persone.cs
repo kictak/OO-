@@ -13,7 +13,7 @@ namespace ООП
         private string surname;
         private Gender gender;
         private System.DateTime date_of_birth;
- public Persone(string n, string s, DateTime date)
+        public Persone(string n, string s, DateTime date)
         {
             name = n;
             surname = s;

@@ -11,8 +11,11 @@ namespace ООП
         static void Main(string[] args)
         {
 
-            Article a = new Article();
-            Console.WriteLine(a.ToFullString());
+            Console.WriteLine(Kata.SwitchItUp(2));
+            
+
+            //Article a = new Article();
+            //Console.WriteLine(a.ToFullString());
 
             //Persone persone1 = new Persone();
             //Console.WriteLine(persone1.GetName());
