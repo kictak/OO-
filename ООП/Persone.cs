@@ -43,11 +43,7 @@ namespace ООП
         public string ToFullString()
         {
             return GetName() + "  " + GetSurname() + "  " + Getdate_of_birth();
-        }
-  
-        
-       
-       
+        }   
     }
 }
 //public void  SetName(string value)
