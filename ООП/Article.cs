@@ -12,11 +12,11 @@ namespace ООП
         public string title;
         public double rating;
         
-        public Article(Persone p, string t, double r)
+        public Article(Persone persone, string title, double rating)
         {
-            persone = p;
-            title = t;
-            rating = r;
+            this.persone = persone;
+            this.title = title;
+            this.rating = rating;
         }
 
         public Article()

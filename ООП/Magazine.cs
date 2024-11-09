@@ -9,13 +9,13 @@ namespace ООП
         private DateTime date;
         private int circulation;
         private Article[] articles;
-        public Magazine(string n, Frequncy f, DateTime d, int c, Article[] a)
+        public Magazine(string name, Frequncy frequncy, DateTime date, int circulation, Article[] articles)
         {
-            Name = n;
-            frequncy = f;
-            date = d;
-            circulation = c;
-            articles = a;
+            this.Name = name;
+            this.frequncy = frequncy;
+            this.date = date;
+            this.circulation = circulation;
+            this.articles = articles;
         }
 
         public Magazine()
@@ -59,10 +59,23 @@ namespace ООП
             
             return sum;
         }
-        //метод void AddArticles(params Article[]) для добавления элементов в список статей в журнале;
-        void AddArticles (params Article[] articles) 
+
+        void AddArticles (params Article[] newArticles) 
         {
-            
+            //Article[] currentArtickes = new Article[2];
+            //currentArtickes[0] = new Article();
+            //currentArtickes[1] = new Article(new Persone(), "", 0);
+            Article[] tmp;
+            tmp = new Article[articles.Length + newArticles.Length];
+            for (int i = 0; i < articles.Length; i++)
+            {
+                tmp[i] = articles[i];
+            }
+            for (int i = 0; i < newArticles.Length; i++)
+            {
+                tmp[articles.Length + i] = newArticles[i];
+            }
+            articles = tmp;
         }
     }
 }

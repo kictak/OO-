@@ -9,37 +9,47 @@ namespace ООП
 {
     class Persone
     {
-        private string name;
+        private string Name;
         private string surname;
         private Gender gender;
         private System.DateTime date_of_birth;
-        public Persone(string n, string s, DateTime date)
+        public Persone(string name, string surname, DateTime date_of_birth)
         {
-            name = n;
-            surname = s;
-            date_of_birth = date;
+            this.Name = name;
+            this.surname = surname;
+            this.date_of_birth = date_of_birth;
         }
         public Persone()
         {
-            name = "Степан";
+            Name = "Степан";
             surname = "Поляков";
+            date_of_birth = new DateTime(2002,20,02);
         }
 
-       
+        public void SetName(string value)
+        {
+            Name = value;
+        }
         public string GetName()
         {
-            return name;
+            return Name;
+        }
+        public void SetSurname(string value)
+        {
+            surname = value;
         }
         public string GetSurname()
         {
             return surname;
         }
-
+        public void SetDatetime(DateTime value)
+        {
+            date_of_birth = value;
+        }
         public DateTime Getdate_of_birth()
         {
             return date_of_birth;
         }
-
         public string ToFullString()
         {
             return GetName() + "  " + GetSurname() + "  " + Getdate_of_birth();

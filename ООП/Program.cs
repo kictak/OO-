@@ -11,8 +11,20 @@ namespace ООП
         static void Main(string[] args)
         {
 
-            Console.WriteLine(Kata.SwitchItUp(2));
-            
+            int[] a = new int[2];
+            Article[] currentArtickes = new Article[2];
+            currentArtickes[0] = new Article();
+            currentArtickes[1] = new Article(new Persone(), "text", 4);
+
+
+            for(int i =0; i< currentArtickes.Length; i++)
+            {
+                //currentArtickes[i] = new Article();
+            }
+
+
+
+            Console.WriteLine(  );
 
             //Article a = new Article();
             //Console.WriteLine(a.ToFullString());
