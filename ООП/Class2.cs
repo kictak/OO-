@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace ООП
 {
-    enum Frequncy
+    class Class2
     {
-        Weekly,
-        Mouthly,
-        Yerly
     }
 }
