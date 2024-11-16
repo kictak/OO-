@@ -4,29 +4,32 @@ namespace ООП
 {
     class Magazine
     {
-        private string Name;
+        private string name;
         private Frequncy frequncy;
         private DateTime date;
         private int circulation;
         private Article[] articles;
         public Magazine(string name, Frequncy frequncy, DateTime date, int circulation, Article[] articles)
         {
-            this.Name = name;
+            this.name = name;
             this.frequncy = frequncy;
             this.date = date;
             this.circulation = circulation;
             this.articles = articles;
         }
 
+
         public Magazine()
         {
-            Name = "Time";
+            name = "Time";
+            date = new DateTime(2002, 02, 20);
             circulation = 10000;
+            articles = new Article [0];
         }
 
         public string GetName()
         {
-            return Name;
+            return name;
         }
         public Frequncy Getfreqncy()
         {
@@ -76,6 +79,16 @@ namespace ООП
                 tmp[articles.Length + i] = newArticles[i];
             }
             articles = tmp;
+        }
+
+        public string ToFullString()
+        {
+            return GetName() + "  " + Getfreqncy() + " " + GetDataTime() + " " + Getcirculation() + " " + GetArticles();
+        }
+
+        public string ToShortString()
+        {
+            return GetName() + "  " + Getfreqncy() + " " + GetDataTime() + " " + Getcirculation() + " " + GetRating();
         }
     }
 }
