@@ -26,24 +26,41 @@ namespace ООП
             circulation = 10000;
             articles = new Article [0];
         }
-
+        public void SetName(string value)
+        {
+            name = value;
+        }
         public string GetName()
         {
             return name;
         }
-        public Frequncy Getfreqncy()
+        public void SetFreqncy(Frequncy value)
+        {
+            frequncy = value;
+        }
+        public Frequncy GetFreqncy()
         {
             return frequncy;
         }
-
+        public void SetDataTime(DateTime value)
+        {
+            date = value;
+        }
         public DateTime GetDataTime()
         {
             return date;
         }
-
-        public int Getcirculation()
+        public void Setcirculation(int value)
+        {
+            circulation = value;
+        }
+        public int GetCirculation()
         {
             return circulation;
+        }
+        public void SetArticles(Article[] value)
+        {
+            articles = value;
         }
         public Article[] GetArticles()
         {
@@ -83,12 +100,12 @@ namespace ООП
 
         public string ToFullString()
         {
-            return GetName() + "  " + Getfreqncy() + " " + GetDataTime() + " " + Getcirculation() + " " + GetArticles();
+            return GetName() + "  " + GetFreqncy() + " " + GetDataTime() + " " + GetCirculation() + " " + GetArticles();
         }
 
         public string ToShortString()
         {
-            return GetName() + "  " + Getfreqncy() + " " + GetDataTime() + " " + Getcirculation() + " " + GetRating();
+            return GetName() + "  " + GetFreqncy() + " " + GetDataTime() + " " + GetCirculation() + " " + GetRating();
         }
     }
 }

@@ -26,6 +26,8 @@ namespace ООП
             rating = 9.4;
         }
 
+
+
         public string ToFullString()
         {
             //return $"статья такая то... рейтинг такой. автор: тут поля из персона";
