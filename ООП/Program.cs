@@ -54,7 +54,7 @@ namespace ООП
             p.Display();
 
 
-            Student s = new Student(university);
+            Student s = new Student(name, surname, date_of_birth, university);
             s.Display();
         }
 
