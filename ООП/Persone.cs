@@ -9,10 +9,10 @@ namespace ООП
 {
     class Persone
     {
-        private string Name;
-        private string surname;
-        private Gender gender;
-        private System.DateTime date_of_birth;
+        protected string Name;
+        protected string surname;
+        protected Gender gender;
+        protected System.DateTime date_of_birth;
         public Persone(string name, string surname, DateTime date_of_birth)
         {
             this.Name = name;
@@ -23,9 +23,8 @@ namespace ООП
         {
             Name = "Степан";
             surname = "Поляков";
-            date_of_birth = new DateTime(2002,20,02);
+            date_of_birth = new DateTime(2002,02,20);
         }
-
         public void SetName(string value)
         {
             Name = value;
@@ -53,9 +52,17 @@ namespace ООП
         public string ToFullString()
         {
             return GetName() + "  " + GetSurname() + "  " + Getdate_of_birth();
-        }   
+        }  
+
+        public void Display()
+        {
+            Console.Write(Name + " " + surname + " " +  date_of_birth);
+        }
+       
     }
+
 }
+
 //public void  SetName(string value)
 //{
 //    if(Regex.IsMatch (value, "^[А-ЯЁ][а-яё]{2,}$"))
